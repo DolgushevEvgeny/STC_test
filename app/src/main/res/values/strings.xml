@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">STC</string>
+    <string name="empty_event_list">Пусто</string>
+    <string name="add_contact">Добавить контакт</string>
 </resources>

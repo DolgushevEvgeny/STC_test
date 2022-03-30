@@ -1,4 +1,4 @@
-package com.eugene_dolgushev.stc
+package com.eugene_dolgushev
 
 import org.junit.Test
 
