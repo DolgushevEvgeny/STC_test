@@ -51,6 +51,8 @@ dependencies {
     implementation "com.mikepenz:fastadapter:5.5.1"
     implementation "com.mikepenz:fastadapter-extensions-binding:5.5.1"
     implementation "com.mikepenz:fastadapter-extensions-diff:5.5.1"
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.4.1'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.4.1'
 
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'

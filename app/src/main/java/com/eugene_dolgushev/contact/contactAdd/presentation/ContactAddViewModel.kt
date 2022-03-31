@@ -1,4 +1,4 @@
-package com.eugene_dolgushev.contact.contactAdd
+package com.eugene_dolgushev.contact.contactAdd.presentation
 
 import androidx.lifecycle.ViewModel
 import com.eugene_dolgushev.contact.contactAdd.domain.models.AddContactParams

@@ -6,11 +6,11 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
+import androidx.navigation.Navigation
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.eugene_dolgushev.contact.contactList.di.ContactListDICompanion
-import com.eugene_dolgushev.contact.contactAdd.domain.models.AddContactParams
-import com.eugene_dolgushev.contact.contactAdd.domain.models.Result
 import com.eugene_dolgushev.contact.contactList.presentation.adapter.ContactAdapter
+import com.eugene_dolgushev.stc.R
 import com.eugene_dolgushev.stc.databinding.ContactListFragmentBinding
 
 class ContactListFragment : Fragment() {
@@ -42,12 +42,13 @@ class ContactListFragment : Fragment() {
         subscribeToViewModel()
         with(viewBinding) {
             addContactButton.setOnClickListener {
-                viewModel.addContact(AddContactParams("2", "+99999999999")) { result ->
-                    when (result) {
-                        is Result.Error -> Unit
-                        Result.Success -> Unit
-                    }
-                }
+                Navigation.findNavController(it).navigate(R.id.contactAddFragment)
+//                viewModel.addContact(AddContactParams("2", "+99999999999")) { result ->
+//                    when (result) {
+//                        is Result.Error -> Unit
+//                        Result.Success -> Unit
+//                    }
+//                }
             }
         }
     }
@@ -70,6 +71,11 @@ class ContactListFragment : Fragment() {
     }
 
     companion object {
-        fun newInstance() = ContactListFragment()
+        @JvmStatic
+        fun newInstance() = ContactListFragment().apply {
+            arguments = Bundle().apply {
+
+            }
+        }
     }
 }
