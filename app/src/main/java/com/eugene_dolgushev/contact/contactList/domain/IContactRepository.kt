@@ -8,5 +8,7 @@ interface IContactRepository<T> {
 
     fun deleteContact(contact: T)
 
-    fun getContactList(): LiveData<List<T>>
+    fun getContactLiveData(): LiveData<List<T>>
+
+    fun getContactList(): List<T>
 }

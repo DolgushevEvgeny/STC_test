@@ -6,8 +6,7 @@ import com.eugene_dolgushev.stc.databinding.ContactViewHolderBinding
 
 class ContactViewHolder(
     private val viewHolderBinding: ContactViewHolderBinding
-) :
-    RecyclerView.ViewHolder(viewHolderBinding.root) {
+) : RecyclerView.ViewHolder(viewHolderBinding.root) {
 
     fun bindView(contact: Contact, onDeleteItemClicked: (contact: Contact) -> Unit) {
         with(viewHolderBinding) {

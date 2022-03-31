@@ -7,5 +7,5 @@ class GetContactListUseCase(
     private val contactRepository: IContactRepository<Contact>
 ) {
 
-    fun execute() = contactRepository.getContactList()
+    fun execute() = contactRepository.getContactLiveData()
 }

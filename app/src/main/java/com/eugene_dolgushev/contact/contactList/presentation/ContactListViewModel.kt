@@ -3,9 +3,9 @@ package com.eugene_dolgushev.contact.contactList.presentation
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
 import com.eugene_dolgushev.contact.data.Contact
-import com.eugene_dolgushev.contact.contactList.domain.models.AddContactParams
-import com.eugene_dolgushev.contact.contactList.domain.models.Result
-import com.eugene_dolgushev.contact.contactList.domain.useCase.AddContactUseCase
+import com.eugene_dolgushev.contact.contactAdd.domain.models.AddContactParams
+import com.eugene_dolgushev.contact.contactAdd.domain.models.Result
+import com.eugene_dolgushev.contact.contactAdd.domain.useCase.AddContactUseCase
 import com.eugene_dolgushev.contact.contactList.domain.useCase.DeleteContactUseCase
 import com.eugene_dolgushev.contact.contactList.domain.useCase.GetContactListUseCase
 

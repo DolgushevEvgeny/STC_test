@@ -1,8 +1,8 @@
 package com.eugene_dolgushev.contact.contactList.data
 
 import com.eugene_dolgushev.IDatabase
-import com.eugene_dolgushev.contact.data.Contact
 import com.eugene_dolgushev.contact.contactList.domain.IContactRepository
+import com.eugene_dolgushev.contact.data.Contact
 
 class ContactRepositoryImpl(private val database: IDatabase<Contact>) :
     IContactRepository<Contact> {
@@ -15,5 +15,7 @@ class ContactRepositoryImpl(private val database: IDatabase<Contact>) :
         database.remove(contact)
     }
 
-    override fun getContactList() = database.data
+    override fun getContactLiveData() = database.data
+
+    override fun getContactList() = database.data.value ?: emptyList()
 }
