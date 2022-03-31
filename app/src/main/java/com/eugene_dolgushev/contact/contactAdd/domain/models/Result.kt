@@ -1,4 +1,4 @@
-package com.eugene_dolgushev.contact.contactList.domain.models
+package com.eugene_dolgushev.contact.contactAdd.domain.models
 
 sealed class Result {
 
