@@ -2,6 +2,10 @@
     <string name="app_name">STC</string>
     <string name="empty_event_list">Пусто</string>
     <string name="add_contact">Добавить контакт</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="screen_title_contacts">Контакты</string>
+    <string name="screen_title_new_contact">Новый контакт</string>
+    <string name="contact_delete_title">Вы действительно хотите удалить контакт?</string>
+    <string name="yes">Да</string>
+    <string name="no">Нет</string>
 </resources>

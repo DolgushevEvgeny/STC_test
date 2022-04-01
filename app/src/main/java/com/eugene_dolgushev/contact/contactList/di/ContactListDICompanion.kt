@@ -1,6 +1,6 @@
 package com.eugene_dolgushev.contact.contactList.di
 
-import com.eugene_dolgushev.TemporaryDatabase
+import com.eugene_dolgushev.data.TemporaryDatabase
 import com.eugene_dolgushev.contact.contactList.data.ContactRepositoryImpl
 import com.eugene_dolgushev.contact.contactList.domain.IContactRepository
 import com.eugene_dolgushev.contact.contactAdd.domain.useCase.AddContactUseCase

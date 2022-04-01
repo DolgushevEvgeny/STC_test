@@ -3,6 +3,7 @@ package com.eugene_dolgushev
 import android.content.Context
 import androidx.multidex.MultiDex
 import androidx.multidex.MultiDexApplication
+import com.eugene_dolgushev.di.ApplicationDICompanion
 
 class MainApp : MultiDexApplication() {
 

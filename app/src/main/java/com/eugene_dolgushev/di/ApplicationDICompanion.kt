@@ -1,4 +1,4 @@
-package com.eugene_dolgushev
+package com.eugene_dolgushev.di
 
 import com.eugene_dolgushev.contact.contactList.di.ContactListDICompanion
 

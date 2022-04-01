@@ -1,4 +1,4 @@
-package com.eugene_dolgushev
+package com.eugene_dolgushev.data
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

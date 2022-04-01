@@ -27,6 +27,13 @@ class ContactAddFragment : Fragment() {
         return viewBinding.root
     }
 
+//                viewModel.addContact(AddContactParams("2", "+99999999999")) { result ->
+//                    when (result) {
+//                        is Result.Error -> Unit
+//                        Result.Success -> Unit
+//                    }
+//                }
+
     companion object {
         @JvmStatic
         fun newInstance() = ContactAddFragment().apply {

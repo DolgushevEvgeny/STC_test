@@ -8,8 +8,8 @@
     <fragment
         android:id="@+id/contactListFragment"
         android:name="com.eugene_dolgushev.contact.contactList.presentation.ContactListFragment"
-        android:label="contact_list_fragment"
-        tools:layout="@layout/contact_list_fragment" >
+        android:label="@string/screen_title_contacts"
+        tools:layout="@layout/contact_list_fragment">
         <action
             android:id="@+id/action_contactList_to_contactAdd"
             app:destination="@id/contactAddFragment" />
@@ -17,6 +17,6 @@
     <fragment
         android:id="@+id/contactAddFragment"
         android:name="com.eugene_dolgushev.contact.contactAdd.presentation.ContactAddFragment"
-        android:label="contact_add_fragment"
+        android:label="@string/screen_title_new_contact"
         tools:layout="@layout/contact_add_fragment" />
 </navigation>

@@ -1,6 +1,6 @@
 package com.eugene_dolgushev.contact.contactList.data
 
-import com.eugene_dolgushev.IDatabase
+import com.eugene_dolgushev.data.IDatabase
 import com.eugene_dolgushev.contact.contactList.domain.IContactRepository
 import com.eugene_dolgushev.contact.data.Contact
 
