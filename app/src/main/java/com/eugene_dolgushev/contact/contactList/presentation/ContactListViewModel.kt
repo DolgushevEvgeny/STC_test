@@ -11,7 +11,6 @@ import com.eugene_dolgushev.contact.contactList.domain.useCase.GetContactListUse
 import com.eugene_dolgushev.contact.data.Contact
 
 class ContactListViewModel(
-    private val addContactUseCase: AddContactUseCase,
     private val getContactListUseCase: GetContactListUseCase,
     private val deleteContactUseCase: DeleteContactUseCase
 ) : ViewModel() {
@@ -26,10 +25,6 @@ class ContactListViewModel(
 
     init {
         loadList()
-    }
-
-    fun addContact(params: AddContactParams, callback: (result: Result) -> Unit) {
-        callback(addContactUseCase.execute(params))
     }
 
     fun showContactDeleteDialog(contact: Contact?) {

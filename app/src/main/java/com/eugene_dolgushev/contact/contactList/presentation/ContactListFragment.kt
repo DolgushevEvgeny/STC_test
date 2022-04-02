@@ -19,7 +19,6 @@ class ContactListFragment : Fragment() {
 
     private val mViewModel: ContactListViewModel by lazy {
         viewModel(
-            ContactListDICompanion.addContactUseCase,
             ContactListDICompanion.getContactListUseCase,
             ContactListDICompanion.deleteContactUseCase
         )
