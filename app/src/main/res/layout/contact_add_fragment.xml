@@ -1,13 +1,50 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingHorizontal="16dp"
     tools:context="com.eugene_dolgushev.contact.contactAdd.presentation.ContactAddFragment">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
+        android:id="@+id/nameLabel"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/name_title" />
 
-</FrameLayout>
+    <EditText
+        android:id="@+id/nameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="@string/enter_user_name"
+        android:inputType="textCapWords"
+        android:labelFor="@id/nameLabel" />
+
+    <TextView
+        android:id="@+id/phoneLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/phone_number_title" />
+
+    <EditText
+        android:id="@+id/phoneEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="@string/phone_hint"
+        android:inputType="phone"
+        android:labelFor="@id/phoneLabel" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/addContactButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="32dp"
+        android:text="@string/add_contact"
+        android:textAllCaps="false" />
+
+</LinearLayout>

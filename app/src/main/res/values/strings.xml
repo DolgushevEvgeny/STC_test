@@ -2,10 +2,13 @@
     <string name="app_name">STC</string>
     <string name="empty_event_list">Пусто</string>
     <string name="add_contact">Добавить контакт</string>
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="name_title">Имя контакта</string>
     <string name="screen_title_contacts">Контакты</string>
     <string name="screen_title_new_contact">Новый контакт</string>
     <string name="contact_delete_title">Вы действительно хотите удалить контакт?</string>
     <string name="yes">Да</string>
     <string name="no">Нет</string>
+    <string name="enter_user_name">Введите имя контакта</string>
+    <string name="phone_number_title">Номер телефона</string>
+    <string name="phone_hint">+7</string>
 </resources>

@@ -1,21 +1,29 @@
 package com.eugene_dolgushev.contact.contactAdd.presentation
 
+import SingleLiveEvent
+import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
 import com.eugene_dolgushev.contact.contactAdd.domain.models.AddContactParams
 import com.eugene_dolgushev.contact.contactAdd.domain.models.Result
 import com.eugene_dolgushev.contact.contactAdd.domain.useCase.AddContactUseCase
-import com.eugene_dolgushev.contact.contactList.domain.useCase.GetContactListUseCase
 
 class ContactAddViewModel(
-    private val addContactUseCase: AddContactUseCase,
-    private val getContactListUseCase: GetContactListUseCase
+    private val addContactUseCase: AddContactUseCase
 ) : ViewModel() {
 
-    init {
+    val addContactErrorEvent: LiveData<String>
+        get() = mMutableErrorEvent
 
-    }
+    val addContactSuccessEvent: LiveData<Unit>
+        get() = mMutableSuccessEvent
 
-    fun addContact(params: AddContactParams, callback: (result: Result) -> Unit) {
-        callback(addContactUseCase.execute(params))
+    private val mMutableErrorEvent = SingleLiveEvent<String>()
+    private val mMutableSuccessEvent = SingleLiveEvent<Unit>()
+
+    fun addContact(params: AddContactParams) {
+        when (val result = addContactUseCase.execute(params)) {
+            is Result.Error -> mMutableErrorEvent.value = result.error
+            Result.Success -> mMutableSuccessEvent.call()
+        }
     }
 }
