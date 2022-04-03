@@ -7,6 +7,6 @@ fun ContactAddFragment.viewModel(
     addContactUseCase: AddContactUseCase,
 ) = getViewModel {
     ContactAddViewModel(
-        addContactUseCase = addContactUseCase,
+        addContactUseCase = addContactUseCase
     )
 }
